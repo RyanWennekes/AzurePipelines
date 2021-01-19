@@ -35,10 +35,7 @@ steps:
       **\*test*.dll
       !**\*TestAdapter.dll
       !**\obj\**
-      !**\bin\$(BuildConfiguration)\**\xunit.runner.visualstudio.testadapter.dll
-      !**\bin\$(BuildConfiguration)\**\xunit.runner.visualstudio.dotnetcore.testadapter.dll
     searchFolder: '$(System.DefaultWorkingDirectory)'
-    testRunTitle: 'Test Run'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
-    otherConsoleOptions: '/Framework:.NETCoreApp,Version=3.1'
+    codeCoverageEnabled: true
+    testRunTitle: 'Testing the Project'
+

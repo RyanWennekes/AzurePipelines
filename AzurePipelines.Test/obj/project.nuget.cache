@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aj7mVxtsXtX80xBNnNhenvI1cK7FLT8/XylKAx1UrLGtQ9VinKntcAsKQb1TrdMLZDKSQDQUis6KmjRYQGiohQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ryan\\Desktop\\Dev\\Projects\\Azure\\AzurePipelines\\AzurePipelines.Test\\AzurePipelines.Test.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ryan\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

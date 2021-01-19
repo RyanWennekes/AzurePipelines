@@ -13,6 +13,9 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  releaseVersion: 'netcoreapp3.1'
+  testProject: 'AzurePipelines.TestLibrary'
+  testLibrary: 'AzurePipelines.TestLibrary.dll'
 
 steps:
 - task: NuGetToolInstaller@1
@@ -32,7 +35,7 @@ steps:
   inputs:
     testSelector: 'testAssemblies'
     testAssemblyVer2: |
-      **\bin\$(BuildConfiguration)\**\*test*.dll
+      $(testProject)\bin\$(BuildConfiguration)\$(releaseVersion)\$(testLibrary)
       !**\obj\**
       !**\xunit.runner.visualstudio.testadapter.dll
       !**\xunit.runner.visualstudio.dotnetcore.testadapter.dll

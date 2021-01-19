@@ -8,12 +8,20 @@
     ".NETCoreApp,Version=v3.1": {
       "AzurePipelines.TestLibrary/1.0.0": {
         "dependencies": {
-          "Microsoft.TestPlatform.TestHost": "16.8.3",
+          "Microsoft.NET.Test.Sdk": "16.8.3",
           "xunit": "2.4.1",
           "xunit.runner.visualstudio": "2.4.3"
         },
         "runtime": {
           "AzurePipelines.TestLibrary.dll": {}
+        }
+      },
+      "Microsoft.CodeCoverage/16.8.3": {
+        "runtime": {
+          "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "16.0.30411.27"
+          }
         }
       },
       "Microsoft.CSharp/4.0.1": {
@@ -34,6 +42,12 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Runtime.InteropServices": "4.3.0",
           "System.Threading": "4.3.0"
+        }
+      },
+      "Microsoft.NET.Test.Sdk/16.8.3": {
+        "dependencies": {
+          "Microsoft.CodeCoverage": "16.8.3",
+          "Microsoft.TestPlatform.TestHost": "16.8.3"
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -149,15 +163,7 @@
             "assemblyVersion": "15.0.0.0",
             "fileVersion": "15.0.0.0"
           },
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.CoreUtilities.dll": {
-            "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.0.0.0"
-          },
           "lib/netcoreapp2.1/Microsoft.TestPlatform.CrossPlatEngine.dll": {
-            "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.0.0.0"
-          },
-          "lib/netcoreapp2.1/Microsoft.TestPlatform.PlatformAbstractions.dll": {
             "assemblyVersion": "15.0.0.0",
             "fileVersion": "15.0.0.0"
           },
@@ -166,10 +172,6 @@
             "fileVersion": "15.0.0.0"
           },
           "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.Common.dll": {
-            "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.0.0.0"
-          },
-          "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {
             "assemblyVersion": "15.0.0.0",
             "fileVersion": "15.0.0.0"
           },
@@ -1094,12 +1096,26 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Microsoft.CodeCoverage/16.8.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pFZAEvmIEkEIKl6WD1wCZ2qkc3f6PLdc2kAjCsUJfaMxVtgq3qxcQd4eZq+ZMt9eSX12VfxtFav2vPy1yiu8bw==",
+      "path": "microsoft.codecoverage/16.8.3",
+      "hashPath": "microsoft.codecoverage.16.8.3.nupkg.sha512"
+    },
     "Microsoft.CSharp/4.0.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
       "path": "microsoft.csharp/4.0.1",
       "hashPath": "microsoft.csharp.4.0.1.nupkg.sha512"
+    },
+    "Microsoft.NET.Test.Sdk/16.8.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E2hDEEHIUmDpGm0LIjVenWhXWWd5lWylzuujz0iPwwxPYUA2Ua6jrxfMNdoKombDSk9hpDDA0M3xnFz6TLh/KQ==",
+      "path": "microsoft.net.test.sdk/16.8.3",
+      "hashPath": "microsoft.net.test.sdk.16.8.3.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

@@ -14,7 +14,7 @@ namespace AzurePipelines.TestLibrary
         [Fact]
         public void Fail()
         {
-            Assert.Equal(1, 2);
+            Assert.False(1 == 2);
         }
     }
 }

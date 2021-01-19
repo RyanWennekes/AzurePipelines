@@ -40,10 +40,6 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.TestPlatform.TestHost": {
-              "target": "Package",
-              "version": "[16.8.3, )"
-            },
             "xunit": {
               "target": "Package",
               "version": "[2.4.1, )"

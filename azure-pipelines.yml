@@ -41,3 +41,4 @@ steps:
     testRunTitle: 'Test Run'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+    otherConsoleOptions: '/Framework:.NETCoreApp,Version=3.1'
